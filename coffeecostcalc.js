@@ -6,7 +6,7 @@ fetch('alternatives.json')
      alternatives = data;
      console.log("Spending Alternatives Loaded ", alternatives);
  })
- .catch(error => console.error("Could not load spending alternatives ", error); 
+ .catch(error => console.error("Could not load spending alternatives ", error)); 
 
 function calculateCoffeeCost()
 {
