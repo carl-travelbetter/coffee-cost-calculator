@@ -1,9 +1,9 @@
-.tooldiv {
-  border: 5px outset red;
-  background-color: lightblue;
-  margin: auto;
-  width: 95%;
-  text-align:center;
+body {
+    
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .inputbar {
@@ -17,9 +17,20 @@ input, select, textarea {
 }
  
  .calcButton {
-  font-size:30px;
-  margin:10px;
-  }
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.calcButton:hover {
+  background-color: #0066cc;
+}
   
   .savingValue {
       font-size:30px;
