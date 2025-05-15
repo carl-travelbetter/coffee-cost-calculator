@@ -14,7 +14,15 @@
   <main>
     <div class="app">
       <div class="data-input" id="data-input">
-        <button onclick="calculateCoffeeCost()">Calculate</button>
+        <p>Enter Coffees Purchased Per Day</p>
+         <input class="inputbar" type="number" name="coffees" id="coffees" />
+         <br>
+         <p>How Many Days a Week on Average</p>
+         <input class="inputbar" type="number" name="days" id="days" placeholder="5"/>
+         <br>
+         <p>Price Per Coffee £</p>
+         <input class="inputbar" type="number" name="price" id="price" value="3.40" /><br>
+        <button class="claclButton" onclick="calculateCoffeeCost()">Calculate</button>
       </div>
       <div class="results" id="results"></div>
       <div class="alternatives" id="alternatives"></div>
