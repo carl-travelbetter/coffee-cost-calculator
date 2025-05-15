@@ -1,3 +1,33 @@
-body {
-  background-color:red;
+.tooldiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  margin: auto;
+  width: 95%;
+  text-align:center;
 }
+
+.inputbar {
+ margin-top:5px;
+ width : 100px;
+ text-align: center;
+ }
+
+input, select, textarea {
+    font-size: 16px; /* Prevents auto-zoom */
+}
+ 
+ .calcButton {
+  font-size:30px;
+  margin:10px;
+  }
+  
+  .savingValue {
+      font-size:30px;
+      font-weight: bold;
+      color: #a8323c;
+  }
+  
+  .savings {
+      text-align:center;
+  
+  }
