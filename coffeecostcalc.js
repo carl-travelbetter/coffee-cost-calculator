@@ -1,3 +1,13 @@
+let alternatives = [];
+
+fetch('alternatives.json')
+ .then(response => response.json())
+ .then(data => {
+     alternatives = data;
+     console.log("Spending Alternatives Loaded ", alternatives);
+ })
+ .catch(error => console.error("Could not load spending alternatives ", error); 
+
 function calculateCoffeeCost()
 {
   console.log("Calculating Coffee Habit Cost");
