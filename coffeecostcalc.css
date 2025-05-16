@@ -6,9 +6,11 @@ body {
   box-sizing: border-box;
 }
 .resultCard {
-    border: 1px solid red;
-    background-color: #00408F;
-    color:red;
+    border: 2px solid #2307f7;
+    background-color: #4287f5;
+    color:#050505;
+    margin:auto;
+    max-width:80%;
 }
 .inputbar {
  margin-top:5px;
