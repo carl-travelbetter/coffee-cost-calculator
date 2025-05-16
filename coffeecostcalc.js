@@ -24,7 +24,7 @@ function calculateCoffeeCost()
 
  //create a results card
  const results = document.getElementById("results");
- const resultCard - document.createElement("div");
+ const resultCard = document.createElement("div");
  resultCard.className = "resultCard";
  const calc = document.createElement("p");
  calc.textContent = result;
