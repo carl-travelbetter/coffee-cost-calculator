@@ -37,7 +37,7 @@ function calculateCoffeeCost()
  calcAlternatives();
 }
 
-functional calcAlternatives()
+function calcAlternatives()
 {
    const alternatives = document.getElementById("alternatives");
    if (coffees > 1)
