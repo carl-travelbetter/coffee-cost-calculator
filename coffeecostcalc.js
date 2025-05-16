@@ -1,4 +1,8 @@
 let alternatives = [];
+let coffees = 0;
+let days = 0;
+let price = 0;
+let coffeeSpend = 0;
 
 fetch('alternatives.json')
  .then(response => response.json())
@@ -11,12 +15,12 @@ fetch('alternatives.json')
 function calculateCoffeeCost()
 {
   console.log("Calculating Coffee Habit Cost");
-  let coffees = document.getElementById("coffees").value;
+  coffees = document.getElementById("coffees").value;
   console.log("Coffees "+coffees);
-  let days = document.getElementById("days").value;
+  days = document.getElementById("days").value;
   console.log("days "+days);
-  let price = document.getElementById("price").value;
-  let coffeeSpend = (price * days * coffees).toFixed(2);
+  price = document.getElementById("price").value;
+  coffeeSpend = (price * days * coffees).toFixed(2);
   console.log("Coffee Spend "+coffeeSpend);
   let result = `You Spend <strong> £${coffeeSpend} </strong> on coffee per week`;
   document.getElementById("results").innerHTML = result;
@@ -30,4 +34,18 @@ function calculateCoffeeCost()
  calc.textContent = result;
  resultCard.appendChild(calc);
  results.appendChild(resultCard);
+ calcAlternatives();
 }
+
+functional calcAlternatives()
+{
+   if (coffees > 1)
+   {
+    console.log("More than 1 coffee per day");
+   }
+   else
+   {
+    console.log("One or fewer coffees per day");
+   }
+}
+
