@@ -18,7 +18,9 @@ function calculateCoffeeCost()
   let price = document.getElementById("price").value;
   let coffeeSpend = (price * days * coffees).toFixed(2);
   console.log("Coffee Spend "+coffeeSpend);
-  let result = `You Spend £${coffeeSpend} on coffee per week`;
+  let result = `You Spend <strong> £${coffeeSpend} </strong> on coffee per week`;
   document.getElementById("results").innerHTML = result;
     //savingEstimates(coffeeSpend);
+
+ //create a results card
 }
