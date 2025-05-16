@@ -39,6 +39,7 @@ function calculateCoffeeCost()
 
 functional calcAlternatives()
 {
+   const alternatives = document.getElementById("alternatives");
    if (coffees > 1)
    {
     console.log("More than 1 coffee per day");
@@ -47,10 +48,12 @@ functional calcAlternatives()
     const output = document.createElement("p");
     output.textContent = "You can save...";
     altCards.appendChild(output);
+    alternatives.appendChild(altCards);
    }
    else
    {
     console.log("One or fewer coffees per day");
+    alternatives.innerHTML = "Your coffee spending isn't so bad...enjoy your cup of joe.";
    }
 }
 
