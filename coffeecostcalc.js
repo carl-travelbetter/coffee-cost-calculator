@@ -23,4 +23,11 @@ function calculateCoffeeCost()
     //savingEstimates(coffeeSpend);
 
  //create a results card
+ const results = document.getElementById("results");
+ const resultCard - document.createElement("div");
+ resultCard.className = "resultCard";
+ const calc = document.createElement("p");
+ calc.textContent = result;
+ resultCard.appendChild(calc);
+ results.appendChild(resultCard);
 }
