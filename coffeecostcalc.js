@@ -42,6 +42,11 @@ functional calcAlternatives()
    if (coffees > 1)
    {
     console.log("More than 1 coffee per day");
+    const altCards = document.createElement("div");
+    altCards.className = "resultCard";
+    const output = document.createElement("p");
+    output.textContent = "You can save...";
+    altCards.appendChild(output);
    }
    else
    {
